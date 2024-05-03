@@ -1,0 +1,118 @@
+//---------------------------------
+//DETECTOR PARAMETERS BLOCK:
+//---------------------------------
+//Detector types: COAXIAL, SCINTILLATOR
+
+
+DetectorType = COAXIAL
+
+// Coaxial detector
+DC_CrystalDiameter = 5.51 cm
+DC_CrystalHeight = 3.3 cm
+DC_CrystalHoleDiameter = 1.02 cm
+DC_CrystalHoleHeight = 1.99 cm
+DC_CrystalFrontDeadLayer = 0.1 cm
+DC_CrystalSideDeadLayer = 0.07 cm
+DC_CrystalBackDeadLayer = 0.07 cm
+DC_CrystalHoleBottomDeadLayer = 0.0003 cm
+DC_CrystalHoleSideDeadLayer = 0.0003 cm
+DC_CrystalSideCladdingThickness = 0.08 cm
+DC_CapToCrystalDistance = 0.3 cm
+DC_DetectorCapDiameter = 7 cm
+DC_DetectorCapFrontThickness = 0.103 cm
+DC_DetectorCapSideThickness = 0.1 cm
+DC_DetectorCapBackThickness = 0.1 cm
+DC_DetectorMountingThickness = 3 cm
+
+
+//---------------------------------
+//MATERIAL PARAMETERS BLOCK:
+//---------------------------------
+//Coaxial detector materials:
+//---------------------------
+
+
+// Crystal
+DC_nCrystalElements = 1
+DC_RoCrystal = 5.323
+DC_ZCrystal[0] = 32
+DC_FractionsCrystal[0] = 1
+DC_FractionTypeCrystal = MASS
+M_DC_Crystal.MName = Germanium
+M_DC_Crystal.Nmaterials = 1
+M_DC_Crystal.Name[0] = Germanium
+M_DC_Crystal.MatRelWeight[0] = 1
+
+
+// Crystal Cladding
+DC_nCrystalSideCladdingElements = 1
+DC_RoCrystalSideCladding = 2.7
+DC_ZCrystalSideCladding[0] = 13
+DC_FractionsCrystalSideCladding[0] = 1
+DC_FractionTypeCrystalSideCladding = MASS
+M_DC_Crystal_Cladding.MName = Aluminum
+M_DC_Crystal_Cladding.Nmaterials = 1
+M_DC_Crystal_Cladding.Name[0] = Aluminum
+M_DC_Crystal_Cladding.MatRelWeight[0] = 1
+
+
+// Crystal Mounting
+DC_nCrystalMountingElements = 1
+DC_RoCrystalMounting = 2.7
+DC_ZCrystalMounting[0] = 13
+DC_FractionsCrystalMounting[0] = 1
+DC_FractionTypeCrystalMounting = MASS
+M_DC_Crystal_Mounting.MName = Aluminum
+M_DC_Crystal_Mounting.Nmaterials = 1
+M_DC_Crystal_Mounting.Name[0] = Aluminum
+M_DC_Crystal_Mounting.MatRelWeight[0] = 1
+
+
+// Detector Cap
+DC_nDetectorCapElements = 1
+DC_RoDetectorCap = 2.7
+DC_ZDetectorCap[0] = 13
+DC_FractionsDetectorCap[0] = 1
+DC_FractionTypeDetectorCap = MASS
+M_DC_Detector_Cap.MName = Aluminum
+M_DC_Detector_Cap.Nmaterials = 1
+M_DC_Detector_Cap.Name[0] = Aluminum
+M_DC_Detector_Cap.MatRelWeight[0] = 1
+
+
+// Vacuum
+DC_nVacuum = 1
+DC_RoVacuum = 1E-10
+DC_ZVacuum[0] = 13
+DC_FractionsVacuum[0] = 1
+DC_FractionTypeVacuum = MASS
+M_DC_Vacuum.MName = Aluminum
+M_DC_Vacuum.Nmaterials = 1
+M_DC_Vacuum.Name[0] = Aluminum
+M_DC_Vacuum.MatRelWeight[0] = 1
+
+//---------------------------------
+//SOURCE PARAMETERS BLOCK:
+//---------------------------------
+//Source types: POINT, CYLINDER, MARINELLI
+
+SourceType = POINT
+
+//Point source
+pdistance = 1 cm
+
+//---------------------------------
+//ANALYZER PARAMETERS BLOCK:
+//---------------------------------
+// Analyzer
+AN_Name = NaI
+AN_FWHM_122 = 11.0
+AN_FWHM_662 = 49.5 
+AN_FWHM_1332 = 75.5
+AN_kev_per_ch = 3.0
+AN_N_ch = 1024
+
+// calculation parameters
+calc_spectrum = true
+threads_number = 1
+calc_coincidence = true
