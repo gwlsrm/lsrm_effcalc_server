@@ -1,6 +1,6 @@
 # Lsrm effcalc server
 
-Lsrm effcalc sever is the virtual MCA (multi-channel analyzer) for SpectraLine. It accepts commands from SpectraLine by tcp (start, stop spectrum acquiring, clear spectrum, ...) and starts Monte-Carlo calculation using tccfcalc.dll from EffCalcMC (NuclideMasterPlus).
+Lsrm effcalc sever is the virtual MCA (multi-channel analyzer) for [SpectraLine](http://lsrm.ru/en/products/list.php?SECTION_CODE=semejjstvo_spectraline_1.7). It accepts commands from SpectraLine by tcp (start, stop spectrum acquiring, clear spectrum, ...) and starts Monte-Carlo calculation using tccfcalc.dll from EffCalcMC (NuclideMasterPlus).
 
 ## How to use
 
